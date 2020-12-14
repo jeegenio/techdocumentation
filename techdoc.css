@@ -1,0 +1,79 @@
+body{
+    display: grid;
+    background-color: rgb(225, 225, 225);
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+     "navbar main-doc";
+   
+}
+#navbar{
+    grid-area: navbar;
+}
+#main-doc{
+    grid-area: main-doc;
+}
+@media all  {
+    #navbar {
+        
+            position: fixed;
+            left: 0;
+            width: 200px;
+            border: 1px solid rgb(0, 0, 0);
+            height: 100%;
+            margin: 2px;
+          }
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-top: -8.5px;
+    background-color: rgb(202, 202, 202);
+}
+#navbar ul {
+    margin-left: -20px;
+    list-style: none;
+    text-decoration: none; 
+    align-self: flex-start;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#navbar li{
+    margin-bottom: 2em;
+
+}
+#navbar a {
+    text-decoration: none;    
+}
+#navbar header{
+    height: 50px;
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#main-doc header{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+#main-doc p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#main-doc ul{
+    font-size: 20px;
+}
+#main-doc code{
+    color: blue;
+    font-weight: bold;
+    font-size: 15px;
+}
